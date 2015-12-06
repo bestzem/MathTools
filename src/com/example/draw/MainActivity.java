@@ -5,7 +5,9 @@ import java.text.NumberFormat;
 import java.util.*;
 import java.util.regex.Pattern;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -162,11 +164,20 @@ public class MainActivity extends Activity implements OnClickListener{
     	case R.id.text_view:
     	case R.id.text_viewhistory:toHistory();break; 
     	case R.id.title_about:AboutActivity.actionStart(MainActivity.this);break;
-    	case R.id.title_back:finish();break;
+    	case R.id.title_back:onClickBack();break;
     	case R.id.title_text:break;
     	default:break;
     	}
     }
+    
+    @Override
+   	public boolean onKeyDown(int keyCode, KeyEvent event) {
+   		if (keyCode == KeyEvent.KEYCODE_BACK) {
+   			moveTaskToBack(false);
+   			return true;
+   		}
+   		return super.onKeyDown(keyCode, event);
+   	}
     
     
     void onClickNum(String d)
@@ -581,6 +592,14 @@ public class MainActivity extends Activity implements OnClickListener{
 		}
     }
     
+    void onClickBack()
+    {
+    	Intent intent= new Intent();  
+		intent.setAction(Intent.ACTION_MAIN);  
+		intent.addCategory(Intent.CATEGORY_HOME); 
+		startActivity(intent);
+    }
+    
     void toHistory()
     {
     	for(String s:history)
@@ -591,6 +610,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		viewhistory="";
     }
     
+   
     void flash(String output)
     {   
     	views=views+output;
