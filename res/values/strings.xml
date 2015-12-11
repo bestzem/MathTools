@@ -27,7 +27,7 @@
 	<string name="button_opposite">±</string>
 	<string name="button_ce">CE</string>
 	<string name="title_text">标准计算器</string>
-	<string name="title_about">|</string>
+	<string name="title_about">|></string>
 	<string name="title_back">BACK</string>
 
 </resources>

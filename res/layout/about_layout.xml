@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
+    android:orientation="vertical"
+    android:scrollbars="none" 
     android:background="#ffc0cb">
-    
-    <TextView
-        android:id="@+id/about_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:gravity="center_horizontal"
-        android:textSize="20sp"/>
-    
-    <TextView
+ 
+       <TextView
  	    android:id="@+id/about_tips"
  	    android:layout_width="match_parent"
  	    android:layout_height="wrap_content"
  	    android:clickable="true"
  	    android:gravity="center_horizontal"
- 	    android:textSize="20sp" />
-</LinearLayout>
+ 	    android:textSize="30sp" />       
+       </ScrollView> 
+

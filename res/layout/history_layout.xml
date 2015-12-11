@@ -16,7 +16,7 @@
  	    android:layout_height="wrap_content"
  	    android:clickable="true"
  	    android:gravity="right|bottom"
- 	    android:textSize="20sp" />
+ 	    android:textSize="30sp" />
 
  	</ScrollView>
  	</LinearLayout>

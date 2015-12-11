@@ -49,7 +49,7 @@
         	android:id="@+id/text_viewhistory"
        		android:layout_width="match_parent"
       	 	android:layout_height="70dp"
-        	android:textSize="20sp"
+        	android:textSize="30sp"
         	android:clickable="true"
         	android:textColor="#808080"
 			android:gravity="right|bottom"/>
@@ -57,7 +57,7 @@
         	android:id="@+id/text_view"
        		android:layout_width="match_parent"
       	 	android:layout_height="70dp"
-        	android:textSize="30sp"
+        	android:textSize="40sp"
         	android:singleLine="true" 
         	android:ellipsize="marquee"
         	android:gravity="right|bottom"/>
